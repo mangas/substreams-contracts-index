@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package contract.v1;
+
+message Contract {
+  string tx_hash = 1;
+  uint64 block_number = 2;
+  string address = 3;
+  string parent = 4;
+}
+
+message BlockContracts {
+  repeated Contract contracts = 1;
+}
