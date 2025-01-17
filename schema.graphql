@@ -1,0 +1,8 @@
+type Contract @entity {
+  #address
+  id: ID!
+
+  blockNumber: BigInt!
+  txHash: String!
+  parent: String!
+}
